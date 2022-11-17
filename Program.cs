@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using Lesson13Serialization;
+
+var result = ObjectExtentions.ReadFromJsonFile<Squad>(@"C:/squad.json");
+
+ObjectExtentions.WriteToJsonFile<Squad>(@"C:/result.json", result);
+ObjectExtentions.WriteToXmlFile<Squad>(@"C:/resultxml.xml", result);

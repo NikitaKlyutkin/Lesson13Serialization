@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson13Serialization
 {
+    [Serializable]
     public class Squad
     {
         public string squadName { get; set; }
@@ -16,7 +17,7 @@ namespace Lesson13Serialization
         public List<Members> members { get; set; }
         
     }
-
+    [Serializable]
     public class Members
     {
         public string name { get; set; }
